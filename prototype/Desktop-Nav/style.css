@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background: #E9EDF1;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background: #DBE1E8;
+    padding: 2.8em 12em;
+}
+
+.wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 2.2rem;
+    color: #0460BC;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    gap: 3.5em;
+}
+
+ul a {
+    list-style-type: none;
+    font-size: 1.8em;
+    color: black;
+}
+
+ul a:hover {
+    color: #0460BC;
+}
+
+ul a.active {
+    font-weight: bold;
+}
+
+.cart {
+    display: flex;
+    background: #C3CCD7;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.4em 1.15em;
+    border-radius: 0.4em;
+}
+
+.cart:hover {
+    background: #B5C0CE;
+}
+
+.cart p {
+    font-size: 1.8rem;
+    margin: 0;
+    color: black;
+}

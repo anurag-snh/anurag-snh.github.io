@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SomeComp</h1>
+
+      <nav class="nav">
+        <div class="nav-close-btn">
+          <img src="./assets/close.svg" alt="close button" />
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li class="active">Home</li>
+            <li>Products</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-menu">
+        <a href="#" class="header-cart-btn">
+          <img src="./assets/cart.svg" alt="Cart Image" />
+          <span>Cart</span>
+        </a>
+        <a href="#" class="header-menu-btn">
+          <img src="./assets/hamburger.svg" alt="menu button" />
+        </a>
+      </div>
+    </header>
+
+    <script>
+      document
+        .querySelector(".header-menu-btn")
+        .addEventListener("click", () => {
+          document.querySelector("nav").classList.toggle("open");
+        });
+
+      document.querySelector(".nav-close-btn").addEventListener("click", () => {
+        document.querySelector("nav").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

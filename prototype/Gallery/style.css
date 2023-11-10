@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 3em;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: normal;
+}
+
+span {
+    color: #07801E;
+}
+
+.container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 15em;
+    width: 20em;
+    object-fit: cover;
+    border-radius: 1em;
+}

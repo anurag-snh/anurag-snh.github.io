@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background: #DAE0EA;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2.8em;
+    gap: 4.8em;
+}
+
+.left-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-col__title {
+    margin-bottom: 4.6em;
+}
+
+.left-col__title h1 {
+    font-size: 4.3rem;
+    font-weight: bold;
+    margin: 1.74em 0 0.67em;
+    position: relative;
+}
+
+.left-col__title h1::before {
+    content: "";
+    width: 3.4em;
+    height: 3.4em;
+    border-radius: 0.23em;
+    background: #C7D0E0;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    top: -1.74em;
+    left: -1.16em;
+}
+
+.left-col__title p {
+    font-size: 1.9rem;
+    line-height: 144.5%;
+    font-weight: normal;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cta {
+    background: #1A63DD;
+    border-radius: 0.5em;
+    padding: 1.7em 2.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7em;
+}
+
+.cta span {
+    font-size: 1.8rem;
+    line-height: 144.5%;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cta img {
+    width: 2.8em;
+}
+
+.right-col {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, 15.3em);
+    justify-content: center;
+}
+
+.item {
+    width: 15.3em;
+    height: 15.3em;
+    border-radius: 1em;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.item:nth-of-type(1) { background-image: url(./assets/fitness1.jpg); }
+.item:nth-of-type(2) { background-image: url(./assets/fitness2.jpg); }
+.item:nth-of-type(3) {
+    background-image: url(./assets/fitness3.jpg);
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+@media screen and (min-width:600px) {
+    main {
+        padding: 10.6em 11.4em;
+    }
+
+    .right-col {
+        grid-template-columns: repeat(2, 26.2em);
+        gap: 4em;
+    }
+
+    .item {
+        width: 26.2em;
+        height: 26.2em;
+    }
+
+    .item:nth-of-type(1) {
+        grid-row: 1 / 3;
+        height: 100%;
+    }
+
+    .item:nth-of-type(3) {
+        grid-column: 2;
+    }
+
+    .cta {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    main {
+        flex-direction: row;
+        gap: 12em;
+        padding: 25.2em 17.3em;
+    }
+
+    .left-col {
+        justify-content: space-between;
+    }
+
+    .cta {
+        width: 90%;
+    }
+}

@@ -1,0 +1,26 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #FCE7FF;
+    font-family: 'Poppins', sans-serif;
+    margin: 6.2em;
+}
+
+h1 {
+    margin: 0 0 1.46em 0;
+    font-size: 2.6rem;
+    line-height: 120%;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background: #933A9F;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1em 1.25em;
+    border-radius: 0.6rem;
+}

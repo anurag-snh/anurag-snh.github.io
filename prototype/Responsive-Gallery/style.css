@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 3.81em auto 2.12em;
+}
+
+span {
+    color: #07801E;
+}
+
+.container {
+    margin: 0 2em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+img {
+    border-radius: 1em;
+    object-fit: cover;
+    flex-grow: 1;
+    aspect-ratio: 1 / 1;
+}
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        margin: 0 7.7em;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 15em;
+        aspect-ratio: 1 / 1;
+    }
+}
