@@ -104,25 +104,4 @@ a {
 
 .hero {
     margin-top: 2.4em;
-    background-image: url(./assets/young-business-woman-working-computer-home\ 1.png);
-}
-
-.hero-title {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-title span {
-    font-size: 6rem;
-    line-height: 0.9em;
-    color: white;
-    font-weight: 500;
-}
-
-.bold {
-    font-weight: 600;
-}
-
-.hero-description {
-    font
 }
