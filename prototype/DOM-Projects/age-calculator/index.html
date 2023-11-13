@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Age calculator app || CrisD3V</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <div class="cont">
+          <label for="day" class="input-name">DAY</label>
+          <input type="number" id="day" class="input" placeholder="DD"/>
+        </div>
+
+        <div class="cont">
+          <label for="month" class="input-name">MONTH</label>
+          <input type="number" id="month" class="input" placeholder="MM"/>
+        </div>
+
+        <div class="cont">
+          <label for="year" class="input-name">YEAR</label>
+          <input type="number" id="year" class="input" placeholder="YYYY"/>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fa-solid fa-arrow-down"></i>
+        </button>
+      </form>
+
+      <section class="result">
+        <h1 class="total"><span data-id="total-years">--</span> years</h1>
+        <h1 class="total"><span data-id="total-months">--</span> months</h1>
+        <h1 class="total"><span data-id="total-days">--</span> days</h1>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
