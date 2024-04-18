@@ -92,7 +92,7 @@ ul {
 
 .hero-section h1.title {
     font-family: "GT Walsheim Pro Medium Regular";
-    font-size: 9.6rem;
+    font-size: 6.6rem;
     margin: 0;
 }
 
@@ -340,12 +340,28 @@ footer h1 {
     width: 2em;
 }
 
+.input-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-btn {
+    border: 1px solid #C6C6C6;
+    border-radius: 0.4em;
+    padding: 0.8em 3.5em;
+    margin-right: 0.5em;
+    
+}
+
 .contact {
     display: flex;
     gap: 2em;
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 .footer-btn {
     border: 1px solid #C6C6C6;
