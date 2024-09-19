@@ -11,7 +11,9 @@ function formatNumber(num) {
 }
 
 // Load JSON data
-fetch("./data/vector/target-channel-vector.json")
+fetch(
+  "https://sightml.s3.ap-southeast-2.amazonaws.com/target-channel-vector.json"
+)
   .then((response) => response.json())
   .then((data) => {
     const embeddings = data.embeddings;
@@ -574,7 +576,9 @@ function plotSubTopicChart(topicId, data) {
 }
 
 // Fetch and plot the Topic Chart
-fetch("./data/vector/target-channel-vector.json")
+fetch(
+  "https://sightml.s3.ap-southeast-2.amazonaws.com/target-channel-vector.json"
+)
   .then((response) => response.json())
   .then((data) => {
     const embeddings = data.embeddings;
