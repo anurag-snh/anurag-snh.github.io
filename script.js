@@ -11,9 +11,7 @@ function formatNumber(num) {
 }
 
 // Load JSON data
-fetch(
-  "https://sightml.s3.ap-southeast-2.amazonaws.com/target-channel-vector.json"
-)
+fetch("./data/vector/output.json")
   .then((response) => response.json())
   .then((data) => {
     const embeddings = data.embeddings;
@@ -480,7 +478,7 @@ function plotSubTopicChart(topicId, data) {
       datasets: [
         {
           type: "bar",
-          label: "Sub-Topic Total Videos",
+          label: "Sub-Niche Total Videos",
           data: subTotalVideosData, // Total videos for each sub-topic
           backgroundColor: "rgb(251, 99, 64)", // Color for each bar
           yAxisID: "y1", // Link to secondary y-axis for Total Videos
@@ -488,7 +486,7 @@ function plotSubTopicChart(topicId, data) {
         },
         {
           type: "bar",
-          label: "Sub-Topic Avg. Views",
+          label: "Sub-Niche Avg. Views",
           data: subAvgViewsData, // Average views for each sub-topic
           backgroundColor: "rgb(45, 206, 137)", // Color for average views
           yAxisID: "y2", // Link to primary y-axis for Avg. Views
@@ -576,9 +574,7 @@ function plotSubTopicChart(topicId, data) {
 }
 
 // Fetch and plot the Topic Chart
-fetch(
-  "https://sightml.s3.ap-southeast-2.amazonaws.com/target-channel-vector.json"
-)
+fetch("./data/vector/output.json")
   .then((response) => response.json())
   .then((data) => {
     const embeddings = data.embeddings;
